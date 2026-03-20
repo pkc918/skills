@@ -1,0 +1,29 @@
+{
+    "name": "developer",
+    "description": "",
+    "version": "0.0.1",
+    "author": {
+        "name": "青椒肉丝",
+        "url": "https://github.com/pkc918"
+    },
+    "homepage": "https://github.com/pkc918/skills",
+    "repository": "https://github.com/pkc918/skills",
+    "license": "MIT",
+    "keywords": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "cr",
+        "designer",
+        "ui"
+    ],
+    "agents": [
+        "./developer/"
+    ],
+    "skills": [
+        "./skills/"
+    ],
+    "hooks": "./config/hooks.json",
+    "mcpServers": "./config/.mcp.json",
+    "lspServers": "./config/.lsp.json"
+}

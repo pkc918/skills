@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+        "Figma Desktop": {
+            "url": "http://127.0.0.1:3845/mcp"
+        },
+        "browsermcp": {
+            "command": "pnpx",
+            "args": [
+                "@browsermcp/mcp@latest"
+            ]
+        },
+        "chrome-devtools": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "chrome-devtools-mcp@latest"
+            ]
+        }
+    }
+}

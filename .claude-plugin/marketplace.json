@@ -1,0 +1,29 @@
+{
+    "name": "pkc918",
+    "description": "青椒肉丝's Claude Marketplace",
+    "version": "0.0.1",
+    "owner": {
+        "name": "青椒肉丝",
+        "url": "https://github.com/pkc918"
+    },
+    "plugins": [
+        {
+            "name": "git",
+            "source": "./plugins/git",
+            "description": "A plugin for Git"
+        },
+        {
+            "name": "developer",
+            "source": "./plugins/developer",
+            "description": "A plugin for Developer"
+        },
+        {
+            "name": "test",
+            "source": {
+                "source": "github",
+                "repo": "pkc918/test"
+            },
+            "description": "test plugin"
+        }
+    ]
+}
