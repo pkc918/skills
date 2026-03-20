@@ -1,7 +1,7 @@
 {
   "name": "reactor",
   "version": "0.0.1",
-  "description": "Reactor for AI coding agents — plugins, skills, and marketplace bits for Claude Code & friends. Like Tony Stark's chest piece: wire it in and your agent runs with real power.",
+  "description": "Reactor for AI coding agents — plugins, skills, and marketplace bits for Claude Code & friends. Like JARVIS: wire it in and your agent runs with real power.",
   "scripts": {
     "lint": "eslint",
     "lint:fix": "eslint --fix ."
