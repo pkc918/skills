@@ -1,5 +1,5 @@
 {
-    "name": "developer",
+    "name": "design",
     "description": "",
     "version": "0.0.1",
     "author": {
@@ -10,15 +10,12 @@
     "repository": "https://github.com/pkc918/reactor",
     "license": "MIT",
     "keywords": [
-        "fullstack",
-        "frontend",
-        "backend",
-        "cr",
-        "designer",
-        "ui"
+        "ui",
+        "ux",
+        "design"
     ],
     "agents": [
-        "./agents/developer/"
+        "./agents/design/"
     ],
     "skills": [
         "./skills/"

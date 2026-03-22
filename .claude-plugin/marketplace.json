@@ -16,14 +16,6 @@
             "name": "developer",
             "source": "./plugins/developer",
             "description": "A plugin for Developer"
-        },
-        {
-            "name": "test",
-            "source": {
-                "source": "github",
-                "repo": "pkc918/test"
-            },
-            "description": "test plugin"
         }
     ]
 }
