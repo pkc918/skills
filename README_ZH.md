@@ -2,7 +2,7 @@
 
 [English](README.md) | **中文**
 
-**Reactor** 取名自钢铁侠的核反应堆：它不是单个工具，而是驱动 **AI Agent** 持续工作的核心能源。对一人公司和独立开发者来说，Reactor 是做项目的 **AI agent 反应堆**，把 **PM、项目开发、项目维护、设计、发布、营销** 等流程沉淀成可复用的 **plugins、skills、commands、rules、agents、MCP/LSP 配置**，让 Codex、Claude Code 等 AI coding agent 可以按需安装和调用。
+青椒肉丝'skills
 
 ## 快速上手
 

@@ -2,7 +2,7 @@
 
 **English** | [中文](README_ZH.md)
 
-**Reactor** is named after Iron Man's arc reactor. It is not a single tool, but the core energy source that keeps an **AI Agent** running. For one-person companies and indie builders, Reactor is the **AI agent reactor** for building products: it turns **PM, product development, maintenance, design, release, and marketing** workflows into reusable **plugins, skills, commands, rules, agents, and MCP/LSP configuration** that Codex, Claude Code, and other AI coding agents can install and use on demand.
+青椒肉丝'skills
 
 ## Quick Start
 

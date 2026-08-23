@@ -2,7 +2,7 @@
   "name": "reactor",
   "version": "0.0.1",
   "packageManager": "pnpm@10.30.3",
-  "description": "Reactor for AI coding agents — plugins, skills, and marketplace bits for Codex, Claude Code, and friends. Like JARVIS: wire it in and your agent runs with real power.",
+  "description": "青椒肉丝'skills",
   "author": "https://github.com/pkc918",
   "license": "Apache-2.0",
   "keywords": [
