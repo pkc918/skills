@@ -1,4 +1,4 @@
-# Reactor
+# Skills
 
 [English](README.md) | **中文**
 
@@ -13,13 +13,13 @@
 
 ```bash
 # GitHub 仓库
-codex plugin marketplace add pkc918/reactor
+codex plugin marketplace add pkc918/skills
 
 # 指定 Git ref
-codex plugin marketplace add pkc918/reactor --ref main
+codex plugin marketplace add pkc918/skills --ref main
 
 # 使用 HTTPS Git URL 和 sparse checkout
-codex plugin marketplace add https://github.com/pkc918/reactor.git --sparse .agents/plugins
+codex plugin marketplace add https://github.com/pkc918/skills.git --sparse .agents/plugins
 
 # 本地 marketplace 根目录
 codex plugin marketplace add ./local-marketplace-root
@@ -46,7 +46,7 @@ codex plugin add designer@pkc918
 <summary>从 GitHub 安装整个 Claude Code marketplace</summary>
 
 ```bash
-/plugin marketplace add pkc918/reactor
+/plugin marketplace add pkc918/skills
 ```
 
 </details>
@@ -55,9 +55,9 @@ codex plugin add designer@pkc918
 <summary>安装指定 Claude Code 插件</summary>
 
 ```bash
-/plugin install pkc918/reactor/plugins/git
-/plugin install pkc918/reactor/plugins/developer
-/plugin install pkc918/reactor/plugins/designer
+/plugin install pkc918/skills/plugins/git
+/plugin install pkc918/skills/plugins/developer
+/plugin install pkc918/skills/plugins/designer
 ```
 
 </details>

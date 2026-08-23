@@ -151,7 +151,7 @@ function normalizeRekaApi(markdown: string): string {
 
 async function fetchText(url: string): Promise<string | null> {
   const r = await fetch(url, {
-    headers: { 'User-Agent': 'reactor-generate-shadcn-vue-references' },
+    headers: { 'User-Agent': 'skills-generate-shadcn-vue-references' },
   })
   if (!r.ok)
     return null
@@ -160,7 +160,7 @@ async function fetchText(url: string): Promise<string | null> {
 
 async function listComponentFiles(): Promise<string[]> {
   const r = await fetch(GITHUB_API, {
-    headers: { 'User-Agent': 'reactor-generate-shadcn-vue-references' },
+    headers: { 'User-Agent': 'skills-generate-shadcn-vue-references' },
   })
   if (!r.ok)
     throw new Error(`GitHub API ${r.status}`)

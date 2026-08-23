@@ -1,4 +1,4 @@
-# Reactor
+# Skills
 
 **English** | [中文](README_ZH.md)
 
@@ -13,13 +13,13 @@
 
 ```bash
 # GitHub repository
-codex plugin marketplace add pkc918/reactor
+codex plugin marketplace add pkc918/skills
 
 # Specific Git ref
-codex plugin marketplace add pkc918/reactor --ref main
+codex plugin marketplace add pkc918/skills --ref main
 
 # HTTPS Git URL with sparse checkout
-codex plugin marketplace add https://github.com/pkc918/reactor.git --sparse .agents/plugins
+codex plugin marketplace add https://github.com/pkc918/skills.git --sparse .agents/plugins
 
 # Local marketplace root
 codex plugin marketplace add ./local-marketplace-root
@@ -46,7 +46,7 @@ Open a new Codex session after installation so the plugins are loaded.
 <summary>Install the full Claude Code marketplace from GitHub</summary>
 
 ```bash
-/plugin marketplace add pkc918/reactor
+/plugin marketplace add pkc918/skills
 ```
 
 </details>
@@ -55,9 +55,9 @@ Open a new Codex session after installation so the plugins are loaded.
 <summary>Install specific Claude Code plugins</summary>
 
 ```bash
-/plugin install pkc918/reactor/plugins/git
-/plugin install pkc918/reactor/plugins/developer
-/plugin install pkc918/reactor/plugins/designer
+/plugin install pkc918/skills/plugins/git
+/plugin install pkc918/skills/plugins/developer
+/plugin install pkc918/skills/plugins/designer
 ```
 
 </details>

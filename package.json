@@ -1,12 +1,12 @@
 {
-  "name": "reactor",
+  "name": "skills",
   "version": "0.0.1",
   "packageManager": "pnpm@10.30.3",
   "description": "青椒肉丝'skills",
   "author": "https://github.com/pkc918",
   "license": "Apache-2.0",
   "keywords": [
-    "reactor",
+    "skills",
     "ai",
     "agents",
     "codex",

@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## What is Reactor
+## What is Skills
 
 A plugin system for AI coding agents (Claude Code, Cursor). Provides plugins, skills, commands, rules, and agent definitions that extend agent capabilities. Think of it as a modular toolkit — each plugin bundles related skills, commands, and config.
 
