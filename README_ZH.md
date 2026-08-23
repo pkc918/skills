@@ -8,38 +8,37 @@
 
 ### Codex 安装
 
-使用 [codex-marketplace](https://www.codex-marketplace.com/docs) 从 GitHub 安装本仓库中的插件。
-
 <details>
-<summary>安装全部 Codex 插件</summary>
+<summary>添加 Codex marketplace</summary>
 
 ```bash
-npx codex-marketplace add pkc918/reactor --plugins --global
+# GitHub 仓库
+codex plugin marketplace add pkc918/reactor
+
+# 指定 Git ref
+codex plugin marketplace add pkc918/reactor --ref main
+
+# 使用 HTTPS Git URL 和 sparse checkout
+codex plugin marketplace add https://github.com/pkc918/reactor.git --sparse .agents/plugins
+
+# 本地 marketplace 根目录
+codex plugin marketplace add ./local-marketplace-root
 ```
 
 </details>
 
 <details>
-<summary>只安装到当前项目</summary>
+<summary>安装指定 Codex 插件</summary>
 
 ```bash
-npx codex-marketplace add pkc918/reactor --plugins --project
+codex plugin add git@pkc918
+codex plugin add developer@pkc918
+codex plugin add designer@pkc918
 ```
 
 </details>
 
-<details>
-<summary>单独安装某个 Codex 插件</summary>
-
-```bash
-npx codex-marketplace add pkc918/reactor/plugins/git --plugin --global
-npx codex-marketplace add pkc918/reactor/plugins/developer --plugin --global
-npx codex-marketplace add pkc918/reactor/plugins/designer --plugin --global
-```
-
-</details>
-
-安装后重启 Codex，或重新打开一个 Codex 会话。
+安装后请重新打开一个 Codex 会话，以加载插件。
 
 ### Claude Code 安装
 
@@ -59,17 +58,6 @@ npx codex-marketplace add pkc918/reactor/plugins/designer --plugin --global
 /plugin install pkc918/reactor/plugins/git
 /plugin install pkc918/reactor/plugins/developer
 /plugin install pkc918/reactor/plugins/designer
-```
-
-</details>
-
-<details>
-<summary>使用本地 checkout 安装插件</summary>
-
-```bash
-/plugin install ./plugins/git
-/plugin install ./plugins/developer
-/plugin install ./plugins/designer
 ```
 
 </details>
@@ -100,8 +88,8 @@ npx codex-marketplace add pkc918/reactor/plugins/designer --plugin --global
 
 ```text
 .
-├── .codex-plugin/           # Codex marketplace 入口
-├── .claude-plugin/          # Claude Code marketplace 入口
+├── .agents/plugins/         # Codex marketplace 入口
+├── .claude/plugins/         # Claude Code marketplace 入口
 ├── agents/                  # Agent 角色定义，如 frontend / backend / cr / designer
 ├── commands/                # Slash command 风格文档，如 git-commit、git-rebase
 ├── config/                  # MCP、LSP、hooks 配置

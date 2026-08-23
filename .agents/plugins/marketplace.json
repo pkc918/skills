@@ -1,0 +1,44 @@
+{
+  "name": "pkc918",
+  "interface": {
+    "displayName": "pkc918"
+  },
+  "plugins": [
+    {
+      "name": "git",
+      "source": {
+        "source": "local",
+        "path": "./plugins/git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "tool"
+    },
+    {
+      "name": "developer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/developer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "dev"
+    },
+    {
+      "name": "designer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/designer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "design"
+    }
+  ]
+}

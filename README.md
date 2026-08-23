@@ -8,38 +8,37 @@
 
 ### Codex Installation
 
-Use [codex-marketplace](https://www.codex-marketplace.com/docs) to install plugins from this GitHub repository.
-
 <details>
-<summary>Install all Codex plugins</summary>
+<summary>Add the Codex marketplace</summary>
 
 ```bash
-npx codex-marketplace add pkc918/reactor --plugins --global
+# GitHub repository
+codex plugin marketplace add pkc918/reactor
+
+# Specific Git ref
+codex plugin marketplace add pkc918/reactor --ref main
+
+# HTTPS Git URL with sparse checkout
+codex plugin marketplace add https://github.com/pkc918/reactor.git --sparse .agents/plugins
+
+# Local marketplace root
+codex plugin marketplace add ./local-marketplace-root
 ```
 
 </details>
 
 <details>
-<summary>Install into the current project only</summary>
+<summary>Install a specific Codex plugin</summary>
 
 ```bash
-npx codex-marketplace add pkc918/reactor --plugins --project
+codex plugin add git@pkc918
+codex plugin add developer@pkc918
+codex plugin add designer@pkc918
 ```
 
 </details>
 
-<details>
-<summary>Install a single Codex plugin</summary>
-
-```bash
-npx codex-marketplace add pkc918/reactor/plugins/git --plugin --global
-npx codex-marketplace add pkc918/reactor/plugins/developer --plugin --global
-npx codex-marketplace add pkc918/reactor/plugins/designer --plugin --global
-```
-
-</details>
-
-Restart Codex, or open a new Codex session after installation.
+Open a new Codex session after installation so the plugins are loaded.
 
 ### Claude Code Installation
 
@@ -59,17 +58,6 @@ Restart Codex, or open a new Codex session after installation.
 /plugin install pkc918/reactor/plugins/git
 /plugin install pkc918/reactor/plugins/developer
 /plugin install pkc918/reactor/plugins/designer
-```
-
-</details>
-
-<details>
-<summary>Install plugins from a local checkout</summary>
-
-```bash
-/plugin install ./plugins/git
-/plugin install ./plugins/developer
-/plugin install ./plugins/designer
 ```
 
 </details>
@@ -100,8 +88,8 @@ Restart Codex, or open a new Codex session after installation.
 
 ```text
 .
-├── .codex-plugin/           # Codex marketplace entrypoint
-├── .claude-plugin/          # Claude Code marketplace entrypoint
+├── .agents/plugins/         # Codex marketplace entrypoint
+├── .claude/plugins/         # Claude Code marketplace entrypoint
 ├── agents/                  # Agent role definitions, such as frontend / backend / cr / designer
 ├── commands/                # Slash-command style docs, such as git-commit and git-rebase
 ├── config/                  # MCP, LSP, and hooks configuration
